@@ -22646,7 +22646,7 @@ del {
     object-fit: cover; }
   .category-product .category-badge {
     position: absolute;
-    background-color: #24262B;
+    background-color: #3F6656;
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
@@ -33897,3 +33897,43 @@ footer.footer-dark .icon-bx-wraper {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+    /* =========================================
+       Add to Cart Products 
+    ========================================= */
+
+    .shop-card .dz-content .price {
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.product-actions {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+}
+
+.product-actions .btn {
+	flex: 1;
+	text-align: center;
+	padding: 11px 10px;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
+.product-tag .badge-success {
+	background-color: #28a745;
+	color: #fff;
+}
+
+@media (max-width: 575px) {
+	.product-actions {
+		flex-direction: column;
+	}
+
+	.product-actions .btn {
+		width: 100%;
+	}
+}
