@@ -1,0 +1,79 @@
+
+/* Floating contact buttons */
+.fab-wrapper {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 99999;
+}
+
+.fab-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff !important;
+    font-size: 24px;
+    line-height: 1;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    text-decoration: none !important;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fab-btn:hover {
+    transform: scale(1.1);
+    color: #ffffff !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* WhatsApp */
+.fab-btn.whatsapp {
+    background-color: #25D366 !important;
+}
+
+/* First phone */
+.fab-btn.phone {
+    background-color: #111316 !important;
+}
+
+/* Second phone */
+.fab-btn.phonee {
+    background-color: #421fa3 !important;
+}
+
+/* Make sure the icons themselves are visible */
+.fab-btn i {
+    color: #ffffff !important;
+    display: block;
+}
+
+/* Hide the existing scroll-top button */
+#scroll-top {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .fab-wrapper {
+        right: 15px;
+        bottom: 15px;
+        gap: 10px;
+    }
+
+    .fab-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+}
