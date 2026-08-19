@@ -41,6 +41,10 @@
     background-color: #25D366 !important;
 }
 
+.fab-btn.instagram {
+    background-color: #e1306c !important;
+}
+
 /* First phone */
 .fab-btn.phone {
     background-color: #111316 !important;
